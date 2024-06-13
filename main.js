@@ -6,9 +6,18 @@ const griglia = document.getElementById("griglia");
 
 //creo il bottone all'interno del contenitore che ho precedentemente selezionato in pagina
 const bottone = document.createElement("button")
-tagBottone.append(bottone);
 bottone.innerHTML = 'GENERA GRIGLIA';
+tagBottone.append(bottone);
+//Creo una funzione che al click del bottone mi generi 100 box 
+
+    //creo un ciclo per 100 volte 
 for (let i = 1; i <= 100; i++){
     console.log(i);
+    //creo un blocco con gli elementi per le box 
+    const square = document.createElement('div');
+    square.classList.add("box");
+    console.log(square);
+    //aggiungo il blocco alla mia griglia
+    griglia.append(square);
     
 }
