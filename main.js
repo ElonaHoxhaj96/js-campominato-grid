@@ -24,7 +24,7 @@ bottone.addEventListener('click',
             square.addEventListener('click',
                 function () {
                     square.classList.toggle('clicked');
-                    square.innerHTML += i;
+                    console.log(i);
                 }
             )
         }
