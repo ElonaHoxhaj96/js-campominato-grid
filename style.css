@@ -40,4 +40,9 @@ button{
     border: solid 0.1rem white;
     width: calc(100% / 10);
     min-height: 10%;
+    color: white;
+}
+
+.clicked{
+    background-color: aqua ;
 }

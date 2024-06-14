@@ -18,6 +18,14 @@ for (let i = 1; i <= 100; i++){
     square.classList.add("box");
     console.log(square);
     //aggiungo il blocco alla mia griglia
-    griglia.append(square);
-    
+    griglia.append(square); 
+    square.innerHTML += i;
+    //aggiungiamo l'evento click al box che cambierà colore
+    square.addEventListener('click',
+        function () {
+            square.classList.toggle('clicked');
+        }
+
+
+    )
 }
